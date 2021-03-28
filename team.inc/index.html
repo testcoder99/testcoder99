@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" wrapper="ie=edge">
+	<title>team.inc</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg display="none">
+  <symbol id="telegramm" width="11" height="11" viewBox="0 0 11 11">
+    <g>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M1.69466 5.01745L9.07661 8.16038L9.9135 1.14916L1.69466 5.01745ZM9.25092 8.64836C9.22187 8.64836 9.19302 8.64244 9.16605 8.63118L1.12276 5.20664C1.04951 5.17543 1.00157 5.10651 0.999912 5.03009C0.998459 4.95366 1.04349 4.88316 1.1155 4.84919L10.0708 0.634716C10.1386 0.602724 10.2198 0.608451 10.282 0.65012C10.3443 0.691591 10.3775 0.762092 10.369 0.833976L9.45698 8.4732C9.44951 8.5356 9.41112 8.59129 9.35364 8.6223C9.32189 8.63968 9.2864 8.64836 9.25092 8.64836Z"/>
+		<path d="M1.69466 5.01745L1.63078 4.88173L1.32785 5.02431L1.6359 5.15546L1.69466 5.01745ZM9.07661 8.16038L9.01785 8.2984L9.20185 8.37674L9.22555 8.17816L9.07661 8.16038ZM9.9135 1.14916L10.0624 1.16694L10.0945 0.898174L9.84962 1.01344L9.9135 1.14916ZM9.16605 8.63118L9.10729 8.7692L9.10828 8.76961L9.16605 8.63118ZM1.12276 5.20664L1.06397 5.34464L1.064 5.34465L1.12276 5.20664ZM0.999912 5.03009L0.849939 5.03294L0.849947 5.03334L0.999912 5.03009ZM1.1155 4.84919L1.05162 4.71347L1.0515 4.71353L1.1155 4.84919ZM10.0708 0.634716L10.1347 0.770438L10.1348 0.770392L10.0708 0.634716ZM10.282 0.65012L10.1986 0.774773L10.1989 0.774956L10.282 0.65012ZM10.369 0.833976L10.5179 0.851757L10.5179 0.851606L10.369 0.833976ZM9.45698 8.4732L9.60591 8.49103L9.60592 8.49098L9.45698 8.4732ZM9.35364 8.6223L9.28243 8.49027L9.28162 8.49072L9.35364 8.6223ZM1.6359 5.15546L9.01785 8.2984L9.13537 8.02237L1.75341 4.87944L1.6359 5.15546ZM9.22555 8.17816L10.0624 1.16694L9.76456 1.13138L8.92767 8.14261L9.22555 8.17816ZM9.84962 1.01344L1.63078 4.88173L1.75853 5.15317L9.97738 1.28488L9.84962 1.01344ZM9.25092 8.49836C9.24227 8.49836 9.23302 8.49659 9.22381 8.49275L9.10828 8.76961C9.15303 8.78829 9.20147 8.79836 9.25092 8.79836V8.49836ZM9.22481 8.49317L1.18152 5.06862L1.064 5.34465L9.10729 8.76919L9.22481 8.49317ZM1.18154 5.06863C1.15966 5.05931 1.15019 5.04128 1.14988 5.02683L0.849947 5.03334C0.852954 5.17175 0.939357 5.29156 1.06397 5.34464L1.18154 5.06863ZM1.14988 5.02724C1.14961 5.01295 1.15809 4.99495 1.17949 4.98486L1.0515 4.71353C0.928887 4.77137 0.847305 4.89437 0.849939 5.03294L1.14988 5.02724ZM1.17937 4.98491L10.1347 0.770438L10.0069 0.498994L1.05162 4.71347L1.17937 4.98491ZM10.1348 0.770392C10.1555 0.760625 10.1806 0.762732 10.1986 0.774773L10.3655 0.525466C10.259 0.454169 10.1218 0.444822 10.0068 0.499039L10.1348 0.770392ZM10.1989 0.774956C10.2158 0.786243 10.2217 0.802547 10.22 0.816346L10.5179 0.851606C10.5333 0.721637 10.4728 0.596939 10.3652 0.525284L10.1989 0.774956ZM10.22 0.816195L9.30803 8.45542L9.60592 8.49098L10.5179 0.851757L10.22 0.816195ZM9.30804 8.45537C9.30657 8.46761 9.29852 8.4816 9.28243 8.49028L9.42485 8.75432C9.52372 8.70099 9.59244 8.60359 9.60591 8.49103L9.30804 8.45537ZM9.28162 8.49072C9.27267 8.49561 9.26207 8.49836 9.25092 8.49836V8.79836C9.31074 8.79836 9.37111 8.78374 9.42566 8.75387L9.28162 8.49072Z"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M4.90161 9.8818C4.88272 9.8818 4.86363 9.87923 4.84475 9.8743C4.7549 9.84981 4.69347 9.77141 4.6941 9.68274L4.72004 6.52302C4.72045 6.47582 4.73871 6.4304 4.77129 6.39485L10.0034 0.682466C10.079 0.600314 10.2101 0.591822 10.2964 0.663311C10.3828 0.735194 10.3917 0.859806 10.3164 0.941959L5.13464 6.59924L5.11493 8.97239L6.25831 7.18893C6.31828 7.09572 6.44589 7.06629 6.54363 7.12317C6.64137 7.17984 6.67229 7.30169 6.61253 7.39451L5.07882 9.78721C5.04043 9.84704 4.97257 9.8818 4.90161 9.8818Z"/>
+		<path d="M4.90161 9.8818C4.88272 9.8818 4.86363 9.87923 4.84475 9.8743C4.7549 9.84981 4.69347 9.77141 4.6941 9.68274L4.72004 6.52302C4.72045 6.47582 4.73871 6.4304 4.77129 6.39485L10.0034 0.682466C10.079 0.600314 10.2101 0.591822 10.2964 0.663311C10.3828 0.735194 10.3917 0.859806 10.3164 0.941959L5.13464 6.59924L5.11493 8.97239L6.25831 7.18893C6.31828 7.09572 6.44589 7.06629 6.54363 7.12317C6.64137 7.17984 6.67229 7.30169 6.61253 7.39451L5.07882 9.78721C5.04043 9.84704 4.97257 9.8818 4.90161 9.8818" stroke-width="0.3"/>
+	</g>
+  </symbol>
+  <symbol id="arrow-left" width="25" height="25" viewBox="0 0 24 25">
+    <g>
+		<path d="M24.3189 11.3416H5.70227L13.8356 3.20827C14.4856 2.55827 14.4856 1.4916 13.8356 0.841602C13.5242 0.529514 13.1015 0.354126 12.6606 0.354126C12.2197 0.354126 11.797 0.529514 11.4856 0.841602L0.50227 11.8249C-0.147729 12.4749 -0.147729 13.5249 0.50227 14.1749L11.4856 25.1583C12.1356 25.8083 13.1856 25.8083 13.8356 25.1583C14.4856 24.5083 14.4856 23.4583 13.8356 22.8083L5.70227 14.6749H24.3189C25.2356 14.6749 25.9856 13.9249 25.9856 13.0083C25.9856 12.0916 25.2356 11.3416 24.3189 11.3416Z"/>
+	</g>
+  </symbol>
+  <symbol id="arrow-right"  width="25" height="25" viewBox="0 0 25 25">
+    <g>
+		<path d="M1.68138 14.6666H20.298L12.1647 22.8C11.5147 23.45 11.5147 24.5166 12.1647 25.1666C12.8147 25.8166 13.8647 25.8166 14.5147 25.1666L25.498 14.1833C26.148 13.5333 26.148 12.4833 25.498 11.8333L14.5314 0.833301C14.22 0.521213 13.7972 0.345825 13.3564 0.345825C12.9155 0.345825 12.4928 0.521213 12.1814 0.833301C11.5314 1.4833 11.5314 2.5333 12.1814 3.1833L20.298 11.3333H1.68138C0.764709 11.3333 0.0147095 12.0833 0.0147095 13C0.0147095 13.9166 0.764709 14.6666 1.68138 14.6666Z"/>
+	</g>
+  </symbol>
+  <symbol id="form-btn"  width="16" height="16" viewBox="0 0 16 16">
+    <g>
+		<path d="M1.20874 8.99996H12.3787L7.49874 13.88C7.10874 14.27 7.10874 14.91 7.49874 15.3C7.88874 15.69 8.51874 15.69 8.90874 15.3L15.4987 8.70996C15.8887 8.31996 15.8887 7.68996 15.4987 7.29996L8.91874 0.699956C8.73191 0.512704 8.47826 0.407471 8.21374 0.407471C7.94922 0.407471 7.69557 0.512704 7.50874 0.699956C7.11874 1.08996 7.11874 1.71996 7.50874 2.10996L12.3787 6.99996H1.20874C0.65874 6.99996 0.20874 7.44996 0.20874 7.99996C0.20874 8.54996 0.65874 8.99996 1.20874 8.99996Z"/>
+	</g>
+  </symbol>
+</svg>
+
+
+	<header class="header" style="background-image: url(images/header-bg.jpg);">
+		<div class="container">
+			<div class="header__top header__top--page">
+				<a class="header__top-logo" href="index.html">
+					<img src="images/logo.svg">
+				</a>
+				<div class="header__top-content">
+					<nav class="header__top-menu">
+						<button class="header__top-btn">
+							<span class="header__btn-line"></span>
+						</button>
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="latest-post.html">
+									Product
+								</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="latest-post.html">
+									Services
+								</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="latest-post.html">
+									Blog
+								</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="latest-post.html">
+									Contact
+								</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="latest-post.html">
+									Log In
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<a class="header__top-link" href="#">
+						Get Access
+					</a>
+				</div>
+			</div>
+			<div class="header__body">
+				<h1 class="header__body-title">
+					Instant collaboration for remote teams
+				</h1>
+				<p class="header__body-text">
+					All in one place for your remote team to chat, collaborate & track project progress
+				</p>
+				<form class="header__body-form">
+					<input class="header__body-input" type="email" placeholder="Email">
+					<button class="header__body-btn">
+						Get Early Access
+					</button>
+				</form>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="hub">
+		<div class="hub__content">
+			<div class="hub__content-body section__content-body">
+				<h2 class="hub__body-title section-title">
+					Your hub for teamwork
+				</h2>
+				<p class="channel__body-text section-text">
+					A channel is the place for everything related to a project, topic or team. Everyone in a channel sees the same messages and stays on the same page.
+				</p>
+				<a class="hub__body-link section-link" href="#">
+					Learn More
+				</a>
+			</div>
+			<div class="hub__content-img">
+				<img src="images/hub-img.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="workflow">
+		<div class="workflow__content">
+			<div class="workflow__contetn-img">
+				<img src="images/workflow-img.png">
+			</div>
+			<div class="workflow__contetn-body section__content-body">
+				<h2 class="workflow__body-title section-title">
+					Map out your workflow, from ideas to action.
+				</h2>
+				<p class="workflow__body-text section-text">
+					A channel is the place for everything related to a project, topic or team. Everyone in a channel sees the same messages and stays on the same page.
+				</p>
+				<a class="workflow__body-link section-link" href="#">
+					Learn More
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="scheduling">
+		<div class="scheduling__images" style="background-image: url(images/scheduling-bg.png);">
+			<div class="container">
+				<div class="scheduling__wrapper">
+					<div class="scheduling__wrapper-body section__content-body">
+						<h2 class="scheduling__body-title section-title">
+							Scheduling that actually works
+						</h2>
+						<p class="scheduling__body-text section-text">
+							A channel is the place for everything related to a project, topic or team. Everyone in a channel sees the same messages and stays on the same page.
+						</p>
+						<a class="scheduling__body-link section-link" href="#">
+							Learn More
+						</a>
+					</div>
+					<div class="scheduling__wrapper-block">
+						<div class="scheduling__block-title">
+							Add team mebers
+						</div>
+						<div class="scheduling__block-team">
+							<div class="scheduling__team-user scheduling__team-user--1">
+								LA
+							</div>
+							<div class="scheduling__team-user scheduling__team-user--2">
+								AM
+							</div>
+							<div class="scheduling__team-user scheduling__team-user--3">
+								ES
+							</div>
+							<button class="scheduling__team-button">
+								<svg class="scheduling__team-telegramm">
+              						<use xlink:href=#telegramm></use>
+            					</svg>
+							</button>
+						</div>
+						<div class="scheduling__block-title">
+							Add guests
+						</div>
+						<form class="scheduling__block-form">
+							<input class="scheduling__block-input" type="email" placeholder="Email invitation">
+							<button class="scheduling__form-btn">
+								Send
+							</button>
+						</form>
+						<div class="scheduling__block-title">
+							Notify people on
+						</div>
+						<div class="scheduling__block-checkboxs">
+							<label class="scheduling__block-item">
+								<input class="scheduling__block-checkbox" type="checkbox" checked="">
+								<span class="scheduling__block-style">
+								</span>
+								Slack
+								</label>
+							<label class="scheduling__block-item">
+								<input class="scheduling__block-checkbox" type="checkbox">
+								<span class="scheduling__block-style">
+								</span>
+								HipChat
+							</label>
+						</div>		
+						<div class="scheduling__block-title">
+							Set reminder
+						</div>
+						<div class="scheduling__block-dropdown">
+							<div class="scheduling__dropdown-wrapper">	
+								<button class="scheduling__dropdown-btn" name="select-filter">2 hours before event</button>
+								<ul class="dropdown__list">
+									<li class="dropdown__list-item" data-value="Harry_Winston">2 hours before event</li>
+									<li class="dropdown__list-item" data-value="Buccellati">3 hours before event</li>
+									<li class="dropdown__list-item" data-value="Van_Cleef_&_Arpels">4 hours before event</li>
+									<li class="dropdown__list-item" data-value="Graff">5 hours before event</li>
+								</ul>
+								<input class="catalog-filter__input-hidden" type="text" name="select-category" value="">
+							</div>
+						</div>
+						<button class="scheduling__block-btn">
+							Create event
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+
+	<section class="reviews">
+		<div class="reviews__content">
+			<h2 class="reviews-title section-title">
+					What people like about our team
+			</h2>
+			<div class="reviews-container">
+				<div class="reviews__slider">
+					<a class="reviews__slider-item" href="#">
+						<div class="reviews__item-rating">
+							<img src="images/rating-5.svg">
+						</div>
+						<p class="reviews__item-text">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+						</p>
+						<div class="reviews__item-author">
+							<div class="reviews__author-avatar">
+								<img src="images/slider-avatar1.jpg">
+							</div>
+							<div class="reviews__author-info">
+								<h6 class="reviews__author-name">
+									Jenny Goldberg
+								</h6>
+								<p class="reviews__author-position">
+									CEO at Cola Company
+								</p>
+							</div>
+						</div>
+					</a>
+					<a class="reviews__slider-item" href="#">
+						<div class="reviews__item-rating">
+							<img src="images/rating-5.svg">
+						</div>
+						<p class="reviews__item-text">
+							Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+						</p>
+						<div class="reviews__item-author">
+							<div class="reviews__author-avatar">
+								<img src="images/slider-avatar2.jpg">
+							</div>
+							<div class="reviews__author-info">
+								<h6 class="reviews__author-name">
+									John Norman
+								</h6>
+								<p class="reviews__author-position">
+									CTO at MasterCard
+								</p>
+							</div>	
+						</div>
+					</a>
+					<a class="reviews__slider-item" href="#">
+						<div class="reviews__item-rating">
+							<img src="images/rating-4.svg">
+						</div>
+						<p class="reviews__item-text">
+							Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt.
+						</p>
+						<div class="reviews__item-author">
+							<div class="reviews__author-avatar">
+								<img src="images/slider-avatar3.jpg">
+							</div>
+							<div class="reviews__author-info">
+								<h6 class="reviews__author-name">
+									Jennifer Lopez
+								</h6>
+								<p class="reviews__author-position">
+									Senior Manager at eBay
+								</p>
+							</div>	
+						</div>
+					</a>
+					<a class="reviews__slider-item" href="#">
+						<div class="reviews__item-rating">
+							<img src="images/rating-5.svg">
+						</div>
+						<p class="reviews__item-text">
+							Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+						</p>
+						<div class="reviews__item-author">
+							<div class="reviews__author-avatar">
+								<img src="images/slider-avatar4.jpg">
+							</div>
+							<div class="reviews__author-info">
+								<h6 class="reviews__author-name">
+									Jacob
+								</h6>
+								<p class="reviews__author-position">
+									AVP at IBM
+								</p>
+							</div>	
+						</div>
+					</a>
+					<a class="reviews__slider-item" href="#">
+						<div class="reviews__item-rating">
+							<img src="images/rating-5.svg">
+						</div>
+						<p class="reviews__item-text">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+						</p>
+						<div class="reviews__item-author">
+							<div class="reviews__author-avatar">
+								<img src="images/slider-avatar1.jpg">
+							</div>
+							<div class="reviews__author-info">
+								<h6 class="reviews__author-name">
+									Jenny Goldberg
+								</h6>
+								<p class="reviews__author-position">
+									CEO at Cola Company
+								</p>
+							</div>
+						</div>
+					</a>
+					<a class="reviews__slider-item" href="#">
+						<div class="reviews__item-rating">
+							<img src="images/rating-4.svg">
+						</div>
+						<p class="reviews__item-text">
+							Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+						</p>
+						<div class="reviews__item-author">
+							<div class="reviews__author-avatar">
+								<img src="images/slider-avatar2.jpg">
+							</div>
+							<div class="reviews__author-info">
+								<h6 class="reviews__author-name">
+									John Norman
+								</h6>
+								<p class="reviews__author-position">
+									CTO at MasterCard
+								</p>
+							</div>	
+						</div>
+					</a>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__inner-item">
+					<a class="footer__item-logo" href="#">
+						<img src="images/logo.svg">
+					</a>
+					<p class="footer__item-text">
+						Team Inc is a collaboration software for moderm teams
+					</p>
+				</div>
+				<div class="footer__inner-item">
+					<h3 class="footer__item-title">
+						Features
+					</h3>
+					<ul class="footer__item-list">
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								Screen sharing
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								IOS & Android Apps
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								Files Sharing
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								User Management
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-item">
+					<h3 class="footer__item-title">
+						Company
+					</h3>
+					<ul class="footer__item-list">
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								About Us
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								Careers
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">				Contact Us
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-item ">
+					<h3 class="footer__item-title">
+						Contact Us
+					</h3>
+					<ul class="footer__item-list">
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								info@teaminc.com
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="tel:+1800200300">
+								1-800-200-300
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__item-link" href="#">
+								3500 Deer Creek Rd. Palo Alto CA
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-item footer__inner-item--form">
+					<h3 class="footer__item-title">
+						Stay uP to date
+					</h3>
+					<p class="footer__item-text footer__item-text--form">
+						Subscribe to our newsletter
+					</p>
+					<form class="footer__item-form">
+						<input class="footer__item-input" type="email" placeholder="Email">
+						<button class="footer__item-btn">
+							<svg class="footer__btn-svg">
+								<use xlink:href=#form-btn></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+			<p class="footer__item-copyright">
+				Copyright @Team.Inc
+			</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+  	<script type="text/javascript"></script>
+  	<script src="js/main.js"></script> 				
+</body>
+</html>

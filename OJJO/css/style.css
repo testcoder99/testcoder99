@@ -24,7 +24,7 @@ body{
 }
 .header{
 	height: 100vh;
-	min-height: 560px;
+	min-height: 768px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -126,7 +126,7 @@ body{
 	display: block;
 }
 .header__text{
-	min-height: 70vh;
+	padding-top: 50vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -163,6 +163,10 @@ body{
 	margin-top: 80px;
 	border-top: 1px solid #FFFFFF;
 	padding: 30px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 .header__brends-inner{
 	display: flex;

@@ -673,7 +673,7 @@ body{
 	width: 70%;
 	padding: 18px 16px;
 	background: #2F3162;
-	border: 0;
+	border: 1px solid transparent;
 	border-radius: 5px 0 0 5px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;

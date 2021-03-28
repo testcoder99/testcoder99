@@ -24,7 +24,7 @@ body{
 }
 .header{
 	height: 100vh;
-	min-height: 768px;
+	min-height: 730px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -126,7 +126,7 @@ body{
 	display: block;
 }
 .header__text{
-	padding-top: 50vh;
+	min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1145,6 +1145,9 @@ hr{
 	}
 }
 @media (max-width:990px){
+	.header{
+		min-height: auto;
+	}
 	.header__top-right{
 		display: none;
 	}

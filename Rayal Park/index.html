@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" wrapper="ie=edge">
+	<title>Rayal Park</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg display="none">
+  <symbol id="quotes" width="24" height="21" viewBox="0 0 24 21">
+    <g>
+		<path d="M7.68135 9.08343C7.09024 8.91324 6.49913 8.82689 5.92413 8.82689C5.03621 8.82689 4.2953 9.0298 3.72081 9.27828C4.27466 7.25068 5.60516 3.7521 8.2556 3.35811C8.50106 3.3216 8.7022 3.14412 8.76917 2.90521L9.34845 0.833296C9.39729 0.658077 9.36834 0.470523 9.26839 0.318465C9.16845 0.166407 9.00783 0.0649517 8.82783 0.0402801C8.63222 0.0135945 8.43283 0 8.23521 0C5.05383 0 1.90317 3.32059 0.57367 8.07516C-0.206758 10.8646 -0.4356 15.0582 1.48677 17.6978C2.5625 19.1749 4.13192 19.9636 6.15146 20.0424C6.15977 20.0426 6.16783 20.0429 6.17614 20.0429C8.66797 20.0429 10.8776 18.3647 11.5498 15.9623C11.9513 14.526 11.7698 13.0198 11.0382 11.72C10.3144 10.4348 9.12238 9.49806 7.68135 9.08343Z"/>
+		<path d="M23.2796 11.7203C22.5558 10.4348 21.3637 9.49806 19.9227 9.08343C19.3316 8.91324 18.7405 8.82689 18.1657 8.82689C17.2778 8.82689 16.5367 9.0298 15.9622 9.27828C16.516 7.25068 17.8465 3.7521 20.4972 3.35811C20.7427 3.3216 20.9436 3.14412 21.0108 2.90521L21.5901 0.833296C21.6389 0.658077 21.6099 0.470523 21.51 0.318465C21.4103 0.166407 21.2497 0.0649517 21.0694 0.0402801C20.8741 0.0135945 20.6747 0 20.4768 0C17.2954 0 14.1448 3.32059 12.815 8.07516C12.0348 10.8646 11.806 15.0582 13.7286 17.6983C14.8041 19.1751 16.3738 19.9641 18.3931 20.0426C18.4014 20.0429 18.4094 20.0432 18.418 20.0432C20.9096 20.0432 23.1194 18.365 23.7916 15.9625C24.1927 14.5263 24.0109 13.0198 23.2796 11.7203Z"/>
+	</g>
+  </symbol>
+</svg>
+
+
+	<header class="header" style="background-image: url(images/header-bg.jpg);" id="content">
+		<div class="container header-container">
+			<div class="header__top">
+				<div class="header__top-content">
+					<a class="header__top-logo" href="#">
+						<img src="images/logo.png">
+					</a>
+					<nav class="menu">
+						<div class="menu__btn">
+							<div class="menu__btn-line"></div>
+							<div class="menu__btn-line"></div>
+							<div class="menu__btn-line"></div>
+						</div>
+						<ul class="header__top-list">
+							<li class="header__list-item">
+								<a class="header__list-link" href="#"
+								data-scroll="#content">
+									Home
+								</a>
+							</li>
+							<li class="header__list-item">
+								<a class="header__list-link" href="#"
+								data-scroll="#about">
+									Features
+								</a>
+							</li>
+							<li class="header__list-item">
+								<a class="header__list-link" href="#"
+								data-scroll="#gallery">
+									Gallery
+								</a>
+							</li>
+							<li class="header__list-item">
+								<a class="header__list-link" href="#"
+								data-scroll="#testimonials">
+									Testimonials 
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a class="header__top-link section-link" href="#">
+					Book now
+				</a>
+			</div>
+			<div class="header__body">
+				<h3 class="header__body-suptitle section-suptitle">
+					Serenity
+				</h3>
+				<h1 class="header__body-title">
+					Stay with us feel like <span>home</span>.
+				</h1>
+				<p class="header__body-text">
+					Pet-friendly hotels are becoming increasingly popular; appealing to travellers who can’t bear to be parted.
+				</p>
+				<a class="header__body-link section-link" href="#">
+					Read more
+				</a>
+			</div>
+			<div class="header__info">
+				<div class="header__info-items">
+					<div class="header__info-item">
+						<h6 class="header__info-title">Cheek in</h6>
+						<p class="header__info-numbers">10 Feb 2021</p>
+					</div>
+					<div class="header__info-item">
+						<h6 class="header__info-title">Cheek out</h6>
+						<p class="header__info-numbers">13 Feb 2021</p>
+					</div>
+					<div class="header__info-item">
+						<h6 class="header__info-title">Person</h6>
+						<p class="header__info-numbers">2 Adults 1 kid</p>
+					</div>
+				</div>
+				<a class="header__info-link section-link" href="#">
+					Find room
+				</a>
+			</div>
+		</div>
+	</header>
+ 
+	<section class="video-section">
+		<div class="video-section__container">
+			<div class="video-section__wrapper">
+				<div class="video-section__wrapper-media" style="background-image: url(images/poster-video.png);">
+					<a class="video-section__media-btn" data-fancybox href="https://www.youtube.com/watch?v=u4JeukANXf4&amp;autoplay=1&amp;rel=0&amp;controls=1&amp;showinfo=0">
+						<img src="images/video-btn.svg">
+					</a>
+				</div>
+				<div class="video-section__wrapper-info">
+					<h3 class="video-section__info-suptitle section-suptitle">
+						dream holidays
+					</h3>
+					<h2 class="video-section__info-title section-title">
+						Enjoy unforgettable experiences in dream hotels.
+					</h2>
+					<a class="video-section__info-link section-link" href="#">
+						View more
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<h2 class="about-title section-title">
+				Why you choose us!
+			</h2>
+			<p class="about-text">
+				Naturally, it’s becoming even more important for hotel and hospitality brands to stand out from the crowd. Content marketing remains a key way for hotels to do this.
+			</p>
+			<div class="about__inner">
+				<div class="about__item">
+					<img class="about__item-img" src="images/about-img1.svg">
+					<h4 class="about__item-title">
+						Easy booking 
+					</h4>
+					<p class="about__item-text">
+						The booking process should include minimal steps.
+					</p>
+				</div>
+				<div class="about__item">
+					<img class="about__item-img" src="images/about-img2.svg">
+					<h4 class="about__item-title">
+						Friendly interface
+					</h4>
+					<p class="about__item-text">
+						A hotel booking engine with a good user-friendly.
+					</p>
+				</div>
+				<div class="about__item">
+					<img class="about__item-img" src="images/about-img3.svg">
+					<h4 class="about__item-title">
+						Responsibility
+					</h4>
+					<p class="about__item-text">
+						You should be able to add rooms to your system.
+					</p>
+				</div>
+				<div class="about__item">
+					<img class="about__item-img" src="images/about-img4.svg">
+					<h4 class="about__item-title">
+						Quick order supply
+					</h4>
+					<p class="about__item-text">
+						The booking process should include minimal steps.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="gallery__wrapper">
+				<div class="gallery__wrapper-item gallery__wrapper-item-info">
+					<h2 class="gallery__item-title section-title">
+						About hotel gallery
+					</h2>
+					<p class="gallery__item-text">
+						While some of these examples are real – actually offering guests a stay in the locations advertised – it’s mainly just a way.
+					</p>
+					<a class="gallery__item-link section-link" href="#">
+						View more
+					</a>
+				</div>
+				<div class="gallery__wrapper-item">
+					<img class="gallery__item-img" src="images/gallery-img1.png">
+					<div class="gallery__item-block">
+						<div class="gallery__block-top">
+							<h5 class="gallery__block-title">
+								Lux: Room
+							</h5>
+							<p class="gallery__block-price">
+								$60 night
+							</p>
+						</div>	
+						<a class="gallery__block-link section-link" href="#">
+							Book now
+						</a>
+					</div>
+				</div>
+				<div class="gallery__wrapper-item">
+					<img class="gallery__item-img" src="images/gallery-img2.png">
+					<div class="gallery__item-block">
+						<div class="gallery__block-top">
+							<h5 class="gallery__block-title">
+								Mini Room
+							</h5>
+							<p class="gallery__block-price">
+								$70 night
+							</p>
+						</div>
+						<a class="gallery__block-link section-link" href="#">
+							Book now
+						</a>	
+					</div>
+				</div>
+				<div class="gallery__wrapper-item">
+					<img class="gallery__item-img" src="images/gallery-img3.png">
+					<div class="gallery__item-block">
+						<div class="gallery__block-top">
+							<h5 class="gallery__block-title">
+								Stande Room
+							</h5>
+							<p class="gallery__block-price">
+								$65 night
+							</p>
+						</div>
+						<a class="gallery__block-link section-link" href="#">
+							Book now
+						</a>
+					</div>
+				</div>
+				<div class="gallery__wrapper-item">
+					<img class="gallery__item-img" src="images/gallery-img4.png">
+					<div class="gallery__item-block">
+						<div class="gallery__block-top">
+							<h5 class="gallery__block-title">
+								Single Room
+							</h5>
+							<p class="gallery__block-price">
+								$55 night
+							</p>
+						</div>	
+						<a class="gallery__block-link section-link" href="#">
+						Book now
+						</a>
+					</div>
+				</div>
+				<div class="gallery__wrapper-item">
+					<img class="gallery__item-img" src="images/gallery-img5.png">
+					<div class="gallery__item-block">
+						<div class="gallery__block-top">
+							<h5 class="gallery__block-title">
+								Elite  Room
+							</h5>
+							<p class="gallery__block-price">
+								$65 night
+							</p>
+						</div>	
+						<a class="gallery__block-link section-link" href="#">
+							Book now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="reviews" id="testimonials">
+		<div class="container">
+			<div class="reviews__top">
+				<h2 class="reviews__top-title section-title">
+					What our client say
+				</h2>
+				<a class="reviews__top-link section-link" href="#">
+					View All
+				</a>
+			</div>
+			<div class="reviews__inner">
+				<div class="reviews__inner-item">
+					<img class="reviews__item-img" src="images/reviews-img1.jpg">
+					<svg class="reviews__item-quotes">
+              			<use xlink:href=#quotes></use>
+            		</svg>
+					<p class="reviews__item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit Ultrices.
+					</p>
+					<h6 class="reviews__item-title">
+						David lee
+					</h6>
+					<p class="reviews__item-email">
+						davidlee@
+					</p>
+				</div>
+				<div class="reviews__inner-item">
+					<img class="reviews__item-img" src="images/reviews-img2.jpg">
+					<svg class="reviews__item-quotes">
+              			<use xlink:href=#quotes></use>
+            		</svg>
+					<p class="reviews__item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit Ultrices.
+					</p>
+					<h6 class="reviews__item-title">
+						Ravi shankor
+					</h6>
+					<p class="reviews__item-email">
+						ravishankor@@
+					</p>
+				</div>
+				<div class="reviews__inner-item">
+					<img class="reviews__item-img" src="images/reviews-img3.jpg">
+					<svg class="reviews__item-quotes">
+              			<use xlink:href=#quotes></use>
+            		</svg>
+					<p class="reviews__item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit Ultrices.
+					</p>
+					<h6 class="reviews__item-title">
+						Thomas lew
+					</h6>
+					<p class="reviews__item-email">
+						thomaslew@@
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe">
+		<h3 class="subscribe-suptitle section-suptitle">
+			STAY IN TOUCH
+		</h3>
+		<h2 class="subscribe-title section-title">
+			Join our email. First to know about specials,events and more!
+		</h2>
+		<form class="subscribe__form">
+			<input class="subscribe__form-input" type="email" placeholder="Enter your email address">
+			<button class="subscribe__form-btn">
+				Subscribe
+			</button>
+		</form>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__inner-item footer__inner-item--connection">
+					<a class="footer__item-logo" href="#">
+						<img src="images/logo.png">
+					</a>
+					<p class="footer__item-text">
+						Travel deals on hotels, flights, vacation packages.
+					</p>
+					<a class="footer__item-email" href="#">
+						@shovasatkhira88.com
+					</a>
+					<div class="footer__item-socials">
+						<a class="footer__socials-item" href="#">
+							<img src="images/facebook-icon.svg" alt="">
+						</a>
+						<a class="footer__socials-item" href="#">
+							<img src="images/instagram-icon.svg" alt="">
+						</a>
+						<a class="footer__socials-item" href="#">
+							<img src="images/twitter-icon.svg" alt="">
+						</a>
+						<a class="footer__socials-item" href="#">
+							<img src="images/google-icon.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="footer__inner-item footer__inner-item--links">
+					<h6 class="footer__item-title">
+						Home
+					</h6>
+					<ul class="footer__item-list">
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">
+								Accessibility
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">
+								Lertifiotion
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">
+								Knowledge
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-item footer__inner-item--links">
+					<h6 class="footer__item-title">
+						Pages
+					</h6>
+					<ul class="footer__item-list">
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">
+								Blogs
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">
+								Careers
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">
+								Communing
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-item footer__inner-item-subscribe">
+					<h6 class="footer__item-title footer__item-title--subscribe">
+						SUBSCRIBE
+					</h6>
+					<form class="subscribe__form subscribe__form--footer">
+						<input class="subscribe__form-input" type="email" placeholder="Enter your email address">
+						<button class="subscribe__form-btn">
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer> 
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+  	<script type="text/javascript"></script>
+  	<script src="js/main.js"></script> 				
+</body>
+</html>

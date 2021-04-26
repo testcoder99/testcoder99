@@ -16,6 +16,7 @@ body{
 	font-size: 16px;
 	line-height: 22px;
 	color: #ffffff;
+	background:#2b2b2b;
 }
 .section-button{
 	padding: 10px 25px 8px;
@@ -51,13 +52,9 @@ body{
 } 
 .section-title{
 	font-weight: 900;
-	font-size: 60px;
-	line-height: 70px;
-	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	margin-bottom: 20px;
   	color: #fff;
+  	font-size: 36px;
+  	line-height: 40px;
 }
 .container{
 	max-width: 1430px;
@@ -70,6 +67,9 @@ body{
 	background-size: cover;
 	min-height: 860px;
 }
+.page-header{
+	min-height: auto;
+}
 .header__top{
 	background-color: rgba(0, 0, 0, .5);
 	padding: 25px 0;
@@ -78,7 +78,6 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	text-transform: uppercase;
 }
 .header__top-nav{
 	width: 730px;	
@@ -103,6 +102,38 @@ body{
 .header__top-link:hover{
 	color: #fab800;
 }
+.header__top-account{
+	display: flex;
+	align-items: center;
+}
+.header__account-user{
+	margin-right: 25px;
+	font-weight: 700;
+}
+.header__account-button{
+    padding-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 40px;
+    line-height: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s all;
+}
+.header__account-button:before{
+	opacity: 0;
+}
+.header__account-button:hover:before{
+	opacity: 1;
+}
+.header__account-button:hover{
+	-webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
 .header__body{
 	display: flex;
 	justify-content: space-between;
@@ -121,6 +152,14 @@ body{
 }
 .header__body-text{
 	margin-bottom: 70px;
+}
+.header__body-title{
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	font-size: 60px;
+	line-height: 70px;
+  	margin-bottom: 20px;
 }
 .header__body-text span{
 	color: #ffbc00;
@@ -260,9 +299,13 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	display: none;
+	opacity: 0;
+	min-height: 400px;
+	transition: 0.4s all;
 }
 .header-block__info.header-block__info--active{
 	display: block;
+	opacity: 1;
 }
 .header-block__info-content{
 	padding-top: 30px;
@@ -274,12 +317,6 @@ body{
 	margin-bottom: 45px;
 }
 .header-block__info-title{
-	color: #fff;
-	font-size: 36px;
-	line-height: 40px;
-	background: linear-gradient(rgb(255,255,255) 0%, rgb(255,255,255) 100%);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
   	margin-bottom: 30px;
 }
 .header-block__info-text{
@@ -357,7 +394,12 @@ body{
 }
 .content-title{
 	margin-bottom: 85px;
+	font-size: 60px;
+	line-height: 70px;
 	text-align: center;
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 .content-manual{
 	display: flex;
@@ -438,9 +480,6 @@ body{
 	margin-left: auto;
 }
 .content-news__info-title{
-	font-weight: 900;
-	font-size: 36px;
-	line-height: 40px;
 	margin-bottom: 35px;
 }
 .content-news__info-text{
@@ -514,4 +553,65 @@ body{
 .footer__socials-copyright{
 	font-weight: 300;
 	opacity: 0.2;
+}
+/*Characters*/
+.characters{
+	padding: 30px 0;
+}
+.container{
+}
+.characters__wrapper{
+	
+
+}
+.characters__wrapper-information{
+	background: #222222;
+	padding: 30px;
+	width: 66%;
+}
+.characters-information__top{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ffbc00;
+}
+.characters-information__top-title{
+	color: #fab800;
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 700;
+}
+.characters-information__top-numbers{
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 300;
+}
+.characters-information__top-time{
+	display: flex;
+}
+.characters-information__top-name{
+	margin-right: 5px;
+}
+.characters-information__top-time,
+.characters-information__top-quantity,
+.characters-information__top-characters{
+	display: flex;
+}
+.characters-information__top-characters{
+	margin-left: 62px;
+}
+.characters-information__top-quantity p{
+	margin-right:2px;
+	color: #fab800;
+}
+.characters-information__top-days{
+}
+.characters-information__top-hours {
+}
+.characters-information__top-minuts {
+}
+.characters-information__top-seconds {
+}
+
+.characters-information__top-unit {
 }

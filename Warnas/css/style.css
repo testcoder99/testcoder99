@@ -78,6 +78,22 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+}
+.menu__btn{
+	width: 30px;
+	right: 0;
+	top: 0;
+	display: none;
+}
+.menu__btn-line{
+	width: 100%;
+	margin-bottom: 5px;
+	height: 4px;
+	background: linear-gradient( rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+}
+.menu__btn-line:last-child{
+	margin-bottom: 0;
 }
 .header__top-nav{
 	width: 730px;	
@@ -101,6 +117,12 @@ body{
 }
 .header__top-link:hover{
 	color: #fab800;
+}
+.menu-mobile{
+	display: none;
+}
+.close-btn{
+	display: none;
 }
 .header__top-account{
 	display: flex;
@@ -149,6 +171,7 @@ body{
 }
 .header__body-logo img{
 	display: block;
+	width: 100%;
 }
 .header__body-text{
 	margin-bottom: 70px;
@@ -615,3 +638,92 @@ body{
 
 .characters-information__top-unit {
 }
+@media (max-width: 990px){
+	.header__top{
+		padding: 20px 0;
+	}
+	.header__top-nav{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.header__top-button{
+		margin-left: auto;
+	}
+}
+@media (max-width: 770px){
+	.menu__btn{
+		display: block;
+	}
+	.header__top-content{
+		flex-wrap: nowrap;
+	}
+	.header__top-list,
+	.header__top-button{
+		display: none;
+	}
+	.menu-mobile .header__top-list{
+		display: block;
+	}
+	.menu-mobile .header__top-button{
+		display: inline-block;
+	}
+	.menu-mobile .header__body-logo{
+		margin-bottom: 30px;
+	}
+	.header__top-list{
+		margin-bottom: 30px;
+	}
+	.menu-mobile{
+		display: block;
+		background-color: rgba(34, 34, 34);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 4;
+		transform: translateX(-200%);
+		height: 100%;
+		min-height: 575px;
+		padding: 45px 35px 50px 35px;
+		transition: .4s all;		
+	}
+	.menu-mobile--active{
+		transform: translateX(0%);
+	}
+	.menu-mobile__list-item{
+		margin-bottom: 30px;
+	}
+	.menu-mobile__list-item:last-child{
+		margin-bottom: 35px;
+	}
+	.header__top-list{
+		font-size: 20px;
+	}
+	.header__top-item{
+		margin-bottom: 10px;
+	}
+	.close-btn{
+		display: block;
+		width: 25px;
+    	height: 25px;
+    	position: absolute;
+    	top: 38px;
+    	right: 38px;
+	}
+	.close-btn::after,.close-btn::before{
+    	content: "";
+    	width: 25px;
+    	height: 3px;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	background: linear-gradient( rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+	}
+	.close-btn::before{
+    	transform: rotate(-45deg);
+	}
+	.close-btn::after{
+    	transform: rotate(45deg);
+	}
+}	

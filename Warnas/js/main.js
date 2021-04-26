@@ -6,5 +6,10 @@ $(function(){
 	});
 })	
 
+document.querySelector('.menu__btn').addEventListener('click', function(){
+	document.querySelector('.menu-mobile').classList.add('menu-mobile--active')
+});
 
-
+document.querySelector('.close-btn').addEventListener('click', function(){
+	document.querySelector('.menu-mobile').classList.remove('menu-mobile--active')
+});

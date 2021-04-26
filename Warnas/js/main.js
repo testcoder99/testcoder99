@@ -1,8 +1,8 @@
 $(function(){
-	$('.header-block__list-link').click(function(event) {
+	$('.content-block__list-link').click(function(event) {
 		event.preventDefault();
-		 $('.header-block__info').not($(this)).removeClass('header-block__info--active');;
-		 $($(this).attr('href')).addClass('header-block__info--active');
+		 $('.content-block__info').not($(this)).removeClass('content-block__info--active');;
+		 $($(this).attr('href')).addClass('content-block__info--active');
 	});
 })	
 

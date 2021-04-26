@@ -1,17 +1,8 @@
 $(function(){
-	$('.menu__btn').on('click', function(){
-		$('.header__top-list').slideToggle();
-	});
-	$("[data-scroll").on("click", function(event){
+	$('.header-block__list-link').click(function(event) {
 		event.preventDefault();
-
-		var	$this = $(this), 
-			blockId = $this.data("scroll"),
-			blockOffset = $(blockId).offset().top;
-		$("html, body").animate({
-			scrollTop: blockOffset
-		}, 1500);
-		
+		 $('.header-block__info').not($(this)).removeClass('header-block__info--active');;
+		 $($(this).attr('href')).addClass('header-block__info--active');
 	});
 })	
 

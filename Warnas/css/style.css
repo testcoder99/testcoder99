@@ -926,6 +926,74 @@ body{
 }
 
 
+/*Registration*/
+
+
+.registration{
+	padding: 30px 0;
+}
+.registration-wrapper{
+	padding: 45px 80px 60px;
+	background-color: rgb(34, 34, 34); 
+}
+.registration-wrapper__title,
+.registration-wrapper__bottom-title{
+	text-align: center;
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	margin-bottom: 40px;
+}
+.registration-wrapper__form{
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ffbc00;
+	text-align: center;
+}
+.registration-wrapper__form-content{
+	margin-bottom: 155px;
+}
+.registration-wrapper__form-top{
+	margin-bottom: 30px;
+}
+.registration-wrapper__form-top,
+.registration-wrapper__form-bottom{
+	display: flex;
+	justify-content: space-between;
+}
+.registration-wrapper__form-login {
+}
+.registration-wrapper__form-item {
+}
+.registration-wrapper__form-email {
+}
+.registration-wrapper__form-bottom {
+}
+.registration-wrapper__form-password {
+}
+.registration-wrapper__form-button {
+}
+.registration-wrapper__bottom {
+}
+ {
+}
+.registration-wrapper__bottom-text{
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.registration-wrapper__bottom-buttons {
+}
+.registration-wrapper__bottom-button {
+}
+.registration-wrapper__bottom-button--game {
+}
+.section-button {
+}
+.registration-wrapper__bottom-button--launcher {
+}
 
 
 

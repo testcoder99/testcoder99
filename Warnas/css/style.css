@@ -955,12 +955,14 @@ body{
 
 .registration{
 	padding: 30px 0;
+	background: #101110;
 }
 .registration-wrapper{
 	padding: 45px 80px 60px;
 	background-color: rgb(34, 34, 34); 
 	max-width: 1030px;
 	margin: 0 auto;
+	margin: -244px auto 0;
 }
 .registration-wrapper__title,
 .registration-wrapper__bottom-title{
@@ -1343,6 +1345,7 @@ body{
 	}
 	.registration-wrapper{
 		padding:45px 25px 60px;
+		margin-top: -130px;
 	}
 }
 @media (max-width: 770px){
@@ -1580,7 +1583,7 @@ body{
 		line-height: 22px;
 	}
 	.registration-wrapper{
-		margin: 0 -15px;
+		margin: -130px -15px 0;
 	}
 	.registration-wrapper__form-item{
 		margin-bottom: 20px;
@@ -1620,6 +1623,9 @@ body{
 	.error{
     	min-height: 565px;
    		height: 100vh;
+	}
+	.registration{
+		padding-bottom: 0;
 	}
 }
 @media (max-width: 475px){

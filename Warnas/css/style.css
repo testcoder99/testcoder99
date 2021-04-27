@@ -935,6 +935,8 @@ body{
 .registration-wrapper{
 	padding: 45px 80px 60px;
 	background-color: rgb(34, 34, 34); 
+	max-width: 1030px;
+	margin: 0 auto;
 }
 .registration-wrapper__title,
 .registration-wrapper__bottom-title{
@@ -951,7 +953,7 @@ body{
 	text-align: center;
 }
 .registration-wrapper__form-content{
-	margin-bottom: 155px;
+	margin-bottom: 40px;
 }
 .registration-wrapper__form-top{
 	margin-bottom: 30px;
@@ -961,21 +963,42 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
-.registration-wrapper__form-login {
+.registration-wrapper__form-item::placeholder{
+	color: #fff;
 }
-.registration-wrapper__form-item {
+.registration-wrapper__form-item{
+	width: 48%;
+	padding: 20px;
+	background-color: rgb(51, 51, 51);
+	text-align: center;
+	font-size: 18px;
+	outline: none;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 }
-.registration-wrapper__form-email {
+
+.registration-wrapper__form-button{
+	width: 420px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 23px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-top: 40px;
+	cursor: pointer;
+	font-size: 16px;
 }
-.registration-wrapper__form-bottom {
-}
-.registration-wrapper__form-password {
-}
-.registration-wrapper__form-button {
-}
-.registration-wrapper__bottom {
-}
- {
+.captcha{
+	width: 280px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	background-color: rgb(51, 51, 51);
 }
 .registration-wrapper__bottom-text{
 	text-align: center;
@@ -984,15 +1007,107 @@ body{
 	font-weight: 300;
 	margin-bottom: 40px;
 }
-.registration-wrapper__bottom-buttons {
+.registration-wrapper__bottom-buttons{
+	display: flex;
+	justify-content: space-between;
 }
-.registration-wrapper__bottom-button {
+.registration-wrapper__bottom-button{
+	width: 48%;
+	text-align: center;
+	padding: 20px;
 }
 .registration-wrapper__bottom-button--game {
 }
 .section-button {
 }
-.registration-wrapper__bottom-button--launcher {
+.registration-wrapper__bottom-button--launcher{
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.registration-wrapper__bottom-button--launcher::before{
+	opacity: 0;
+}
+
+/*Recovery*/
+
+.recovery{
+	padding: 180px 0 150px;
+}
+.recovery-wrapper{
+	padding: 40px;
+	background-color: rgb(34, 34, 34); 
+	max-width: 500px;
+	margin: 0 auto;
+}
+.recovery-wrapper__title{
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	text-align: center;
+  	margin-bottom: 40px;
+}
+.recovery-wrapper__form-email{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.recovery-wrapper__form-button{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	padding: 23px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	margin-bottom: 35px;
+	line-height: 18px;
+}
+.recovery-wrapper__text{
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 300;
+	text-align: center;
+}
+.recovery-wrapper__text-content a{
+	color: #ffbc00;
+	font-weight: 700;
+}
+
+/*Error*/
+
+.error{
+	min-height: 990px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.error__content{
+	display: flex;
+	align-items: center;
+	max-width: 620px;
+}
+.error__content-title{
+	font-size: 140px;
+	line-height: 145px;
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	padding-right: 30px;
+  	margin-right: 30px;
+  	position: relative;
+}
+.error__content-title::after{
+	content: "";
+	position: absolute;
+	background: #ffbc00;
+	width: 1px;
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+.error__content-text{
+	font-size: 22px;
+	line-height: 24px;
 }
 
 

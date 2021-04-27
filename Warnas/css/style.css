@@ -142,15 +142,19 @@ body{
     outline: none;
     cursor: pointer;
     font-size: 16px;
+    background: transparent;
+    color: #ff9512;
     border: 2px solid #ff7b00;
     text-transform: uppercase;
-    background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     transition: .2s all;
 }
 .header__account-button:before{
 	opacity: 0;
+}
+.header__account-button:hover{
+	background: linear-gradient(rgba(255,188,0,0) 0%, rgba(255,122,0,0) 100%);
+  	-webkit-background-clip: unset;
+  	-webkit-text-fill-color: unset;
 }
 
 .header__body{

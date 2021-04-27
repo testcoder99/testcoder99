@@ -398,6 +398,9 @@ body{
 .content-block__list-item:hover .content-block__list-wrapper{
 	opacity: 0.5;
 }
+.content-block__list-item:hover{
+	background-color: rgba(34, 34, 34 , 1);
+}
 .content-block__list-author{
 	display: flex;
 	align-items: center;

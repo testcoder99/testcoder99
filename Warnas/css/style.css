@@ -142,6 +142,7 @@ body{
     outline: none;
     cursor: pointer;
     font-size: 16px;
+    border: 2px solid #ff7b00;
     text-transform: uppercase;
     background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
     -webkit-background-clip: text;
@@ -151,13 +152,7 @@ body{
 .header__account-button:before{
 	opacity: 0;
 }
-.header__account-button:hover:before{
-	opacity: 1;
-}
-.header__account-button:hover{
-	-webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-}
+
 .header__body{
 	display: flex;
 	justify-content: space-between;
@@ -357,14 +352,17 @@ body{
 	max-width: 380px;
 	margin-bottom: 55px;
 }
-.content-block__info-link{
+.content-block__info-link,
+.content-block__list-link{
 	padding: 10px 15px 8px;
+	border: none;
 }
 .content-block__info-link:hover,
 .content-block__list-link:hover{
   	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
   	-webkit-background-clip: unset;
   	-webkit-text-fill-color: unset;
+  	border: none;
 }
 .content-block__info-link:hover:before,
 .content-block__list-link:hover:before{
@@ -730,7 +728,7 @@ body{
 }
 .characters-profile__item-button{
 	cursor: pointer;
-	
+
 }
 .characters-profile__top-value span{
 	color: #42ff00;
@@ -796,11 +794,11 @@ body{
   	-webkit-text-fill-color: transparent;
   	margin-bottom: 30px;
 }
-.donations-wrapper__inner{
+.donations-wrapper__form{
 	margin-bottom: 40px;
 	text-align: center;
 }
-.donations-wrapper__inner-top{
+.donations-wrapper__form-top{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -826,19 +824,29 @@ body{
 .donations-wrapper__top-text span{
 	font-weight: 700;
 }
-.donations-wrapper__inner-text{
+.donations-wrapper__form-text{
 	font-weight: 300;
 	margin-bottom: 40px;	
 }
-.donations-wrapper__inner-text span{
+.donations-wrapper__form-text span{
 	color: #ffbc00;
 }
-.donations-wrapper__inner-button{
+.donations-wrapper__form-button{
 	width: 400px;
 	padding: 18px 10px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	cursor: pointer;
+	border: none;
+}
+.donations-wrapper__form-button:hover{
+	border: none;
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: unset;
+  	-webkit-text-fill-color: unset;
+}
+.donations-wrapper__form-button:hover::before{
+	opacity: 1;
 }
 .donations-wrapper__blocks{
 	display: flex;
@@ -998,7 +1006,17 @@ body{
 	line-height: 18px;
 	margin-top: 40px;
 	cursor: pointer;
+	border: none;
 	font-size: 16px;
+}
+.registration-wrapper__form-button:hover{
+	border: none;
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: unset;
+  	-webkit-text-fill-color: unset;
+}
+.registration-wrapper__form-button:hover::before{
+	opacity: 1;
 }
 .captcha{
 	width: 280px;
@@ -1025,8 +1043,10 @@ body{
 	width: 48%;
 	text-align: center;
 	padding: 20px;
+
 }
-.registration-wrapper__bottom-button--game {
+.registration-wrapper__bottom-button--launcher{
+	border: 2px solid #ff7b00;	
 }
 .registration-wrapper__bottom-button--launcher{
 	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
@@ -1069,6 +1089,16 @@ body{
 	cursor: pointer;
 	margin-bottom: 35px;
 	line-height: 18px;
+	border: none;
+}
+.recovery-wrapper__form-button:hover{
+	border: none;
+	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
+  	-webkit-background-clip: unset;
+  	-webkit-text-fill-color: unset;
+  }
+.recovery-wrapper__form-button:hover::before{
+	opacity: 1;
 }
 .recovery-wrapper__text{
 	font-size: 18px;
@@ -1405,7 +1435,7 @@ body{
 	.characters-content__list{
 		width: 100%;
 	}
-	.donations-wrapper__inner-top{
+	.donations-wrapper__form-top{
 		flex-direction: column;
 	}
 	.donations-wrapper__top-item{
@@ -1529,7 +1559,7 @@ body{
 		line-height: 34px;
 		font-size: 29px;
 	}
-	.donations-wrapper__inner-text{
+	.donations-wrapper__form-text{
 		font-size: 14px;
 	}
 	.donations-wrapper__blocks{
@@ -1647,7 +1677,7 @@ body{
 		padding: 15px;
 		font-size: 15px;
 	}
-	.donations-wrapper__inner-button{
+	.donations-wrapper__form-button{
 		width: 100%;
 	}
 	.donations-wrapper__blocks-title{

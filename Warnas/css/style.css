@@ -23,7 +23,7 @@ body{
 	color: #1c2514;
 	line-height: 20px;
 	border: 2px solid transparent;
-	border-image: linear-gradient(rgb(255,188,0) , rgba(255,122,0));
+	-webkit-border-image: linear-gradient(rgb(255,188,0) , rgba(255,122,0));
 	font-weight: 700;
 	border-image-slice: 1;
 	transition: .2s all;

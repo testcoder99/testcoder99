@@ -350,6 +350,7 @@ body{
 }
 .content-block__info-title{
   	margin-bottom: 30px;
+  	text-transform: uppercase;
 }
 .content-block__info-text{
 	font-size: 14px;
@@ -380,7 +381,6 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 26px 30px 25px;
 	border-top: 1px solid #333030;
 	font-size: 14px;
 	line-height: 16px;
@@ -391,6 +391,7 @@ body{
 	transition: 0.4s all;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 26px 30px 25px;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;

@@ -1,5 +1,5 @@
 $(function(){
-	$('.content-block__list-link').click(function(event) {
+	$('.content-block__list-wrapper').click(function(event) {
 		event.preventDefault();
 		 $('.content-block__info').not($(this)).removeClass('content-block__info--active');;
 		 $($(this).attr('href')).addClass('content-block__info--active');

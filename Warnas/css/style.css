@@ -608,6 +608,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 40px;
 }
 .characters__wrapper-information{
 	background: #222222;
@@ -736,7 +737,6 @@ body{
 }
 .characters-profile__item-button{
 	cursor: pointer;
-
 }
 .characters-profile__top-value span{
 	color: #42ff00;
@@ -787,6 +787,59 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
+.characters__warning{
+	padding: 25px 20px 20px;
+	background-color: rgba(53,46,18,.5);
+	max-width: 925px;
+	border: 1px solid #625b3f;
+	opacity: 1;
+	transition: 0.4s all;
+}
+.characters__warning--hidden{
+	display: none;
+}
+.characters__warning-title{
+	color: #d4c76b;
+	margin-bottom: 10px;
+}
+.characters__warning-text{
+	color: #d4c76b;
+	line-height: 20px;
+	max-width: 600px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.characters__warning-buttons{
+	padding-top: 20px;
+	border-top: 1px solid #908b6b;
+	display: flex;
+	align-items: center;
+}
+.characters__warning-button{
+	background: none;
+	border: 2px solid #ff7b00;
+	color: #ff9512;
+	cursor: pointer;
+	margin-right: 5px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 20px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.characters__warning-button:last-child{
+	margin: 0;
+}
+.characters__warning-button:before{
+	opacity: 0;
+}
+.characters__warning-button:hover{
+	background: linear-gradient(rgba(255,188,0,0) 0%, rgba(255,122,0,0) 100%);
+  	-webkit-background-clip: unset;
+  	-webkit-text-fill-color: unset;
+
+}
+
 /*Donations*/
 .donations{
 	padding: 30px 0;
@@ -1173,6 +1226,9 @@ body{
 	.characters-content__list--time{
     	width: 45%;
 	}
+	.characters__warning{
+		margin: 0 auto;
+	}
 	.donations-wrapper__bonuses-item{
 		padding-left: 40px;
 	}
@@ -1321,6 +1377,13 @@ body{
 	.characters-information__top{
 		padding-bottom: 15px;
 	}
+	.characters__warning-buttons{
+		flex-wrap: wrap;
+	}
+	.characters__warning-button{
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
 	.characters-information__top-title{
 		width: 100%;
 		margin-bottom: 10px;
@@ -1446,6 +1509,15 @@ body{
 	.characters-content__list{
 		width: 100%;
 	}
+	.characters__warning-buttons{
+		flex-direction: column;
+		align-items: start;
+	}
+	.characters__warning-button{
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
+	}
 	.donations-wrapper__form-top{
 		flex-direction: column;
 	}
@@ -1555,7 +1627,7 @@ body{
 		margin-bottom: 10px;
 	}
 	.characters__wrapper{
-		margin: 0 -15px;
+		margin: 0 -15px 40px;
 	}
 	.characters__wrapper-information{
 		padding: 20px 15px;
@@ -1721,5 +1793,8 @@ body{
 	}
 	.error__content-title::after{
 		display: none;
+	}
+	.characters__warning-button{
+		font-size: 12px;
 	}
 }	

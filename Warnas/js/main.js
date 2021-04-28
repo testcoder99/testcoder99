@@ -4,6 +4,10 @@ $(function(){
 		 $('.content-block__info').not($(this)).removeClass('content-block__info--active');;
 		 $($(this).attr('href')).addClass('content-block__info--active');
 	});
+	$('.characters__warning-button--close').on('click', function(event){
+		event.preventDefault();
+		$('.characters__warning').addClass('characters__warning--hidden')
+	})
 })	
 
 document.querySelector('.menu__btn').addEventListener('click', function(){

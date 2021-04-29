@@ -102,43 +102,54 @@
 							</li>
 						</ul>
 			   			<div class="header__top-account">
-						<p class="header__account-user">
-							Привет,<span>Username</span>!
-						</p>
-						<button class="header__account-button section-button">
-							ВЫХОД
-						</button>
-					</div>
+							<p class="header__account-user">
+								Привет,<span>Username</span>!
+							</p>
+							<button class="header__account-button section-button">
+								ВЫХОД
+							</button>
+						</div>
 			       </div>
 				</div>
 			</div>
 		</div>
 	</header>
  	
- 	<section class="recovery page-section">
- 		<div class="recovery-wrapper">
- 			<h3 class="recovery-wrapper__title section-title">
- 				ВОССТАНОВЛЕНИЕ ПАРОЛЯ
+ 	<section class="entrance page-section">
+ 		<div class="entrance-wrapper">
+ 			<h3 class="entrance-wrapper__title section-title">
+ 				Вход в личный кабинет
  			</h3>
- 			<form class="recovery-wrapper__form">
- 				<input class="recovery-wrapper__form-email registration-wrapper__form-item
- 				" type="email" placeholder="e-mail">
- 				<div class="captcha">
- 					Здесь будет капча
+ 			<form class="entrance-wrapper__form">
+ 				<div class="entrance-wrapper__form-top">
+ 					<label class="entrance-wrapper__form-label">
+ 						<p>Имя пользователя:</p>
+ 						<input class="entrance-wrapper__form-login registration-wrapper__form-item" type="text">
+ 					</label>
+ 					<label class="entrance-wrapper__form-label">
+ 						<p>Пароль от аккаунта:</p>
+ 						<input class="entrance-wrapper__form-password registration-wrapper__form-item" type="password">
+ 					</label>
  				</div>
- 				<button class="recovery-wrapper__form-button section-button" type="submit">
- 					ВОССТАНОВИТЬ 
- 				</button>
+ 				<div class="entrance-wrapper__form-bottom">
+ 					<p class="entrance-wrapper__form-checkbox">
+ 						<input type="checkbox">
+ 						Чужой компьютер
+ 					</p>
+ 					<img class="capcha-img" src="images/capcha.png">
+ 					<button class="registration-wrapper__form-button section-button entrance-wrapper__form-button" type="submit">
+ 						ВОЙТИ
+ 					</button>
+ 					<p class="entrance-wrapper-text">
+ 						Нет аккаунта?<a href="#">Регистрация аккаунта</a>
+ 					</p>
+ 					<p class="entrance-wrapper-text">
+ 						Забыли пароль?<a href="#">Восстановление</a>
+ 						
+ 					</p>
+ 				</div>
  			</form>
- 			<div class="recovery-wrapper__text">
- 				<p class="recovery-wrapper__text-content">
- 					Нет аккаунта? <a href="#">Регистрация аккаунта</a>
- 				</p>
- 				<p class="recovery-wrapper__text-content">
- 					Вспомнили пароль? <a href="#">Вход в ЛК</a>
- 				</p>
- 			</div>
- 		</div>
+ 		</div>	
  	</section>
 
  	<footer class="footer">

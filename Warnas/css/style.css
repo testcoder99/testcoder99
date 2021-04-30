@@ -652,7 +652,6 @@ body{
 	z-index: 5;
 	position: absolute;
 	top: 50%;
-	display: none;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -704,6 +703,9 @@ body{
 .characters-information__top-quantity span{
 	margin-right:2px;
 	color: #fab800;
+}
+.characters-content{
+	opacity: 0.5;
 }
 .characters-content__item-img{
 	border-radius: 50%;

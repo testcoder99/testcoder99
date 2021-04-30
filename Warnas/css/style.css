@@ -1945,6 +1945,9 @@ body{
 	.entrance-wrapper{
 		width: 100%;
 	}
+	.characters__information-none{
+		width: 100%;
+	}
 }
 @media (max-width: 475px){
 	.content-block__list-author{

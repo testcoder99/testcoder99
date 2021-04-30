@@ -643,7 +643,7 @@ body{
 	background: #222222;
 }
 .characters__wrapper-content{
-	opacity: 0.5;
+	opacity: 1;
 }
 .characters__information-none{
 	padding: 30px;
@@ -652,6 +652,7 @@ body{
 	z-index: 5;
 	position: absolute;
 	top: 50%;
+	display: none;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -709,6 +710,7 @@ body{
 }
 .characters-content__tabs{
 	display: flex;
+	flex-wrap: wrap;
 }
 .characters-content__tabs-item{
 	padding: 3px;
@@ -1102,7 +1104,7 @@ body{
 	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	margin-bottom: 40px;
+  	margin-bottom: 60px;
 }
 .registration-wrapper__form{
 	padding-bottom: 40px;
@@ -1114,7 +1116,7 @@ body{
 	margin-bottom: 40px;
 }
 .registration-wrapper__form-top{
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 .registration-wrapper__form-top,
 .registration-wrapper__form-bottom{
@@ -1125,8 +1127,12 @@ body{
 .registration-wrapper__form-item::placeholder{
 	color: #fff;
 }
-.registration-wrapper__form-item{
+.registration-wrapper__item-wrapper{
 	width: 48%;
+	position: relative;
+}
+.registration-wrapper__form-item{
+	width: 100%;
 	padding: 20px;
 	background-color: rgb(51, 51, 51);
 	text-align: center;
@@ -1134,6 +1140,7 @@ body{
 	outline: none;
 	text-align: center;
 	line-height: 20px;
+	position: relative;
 	color: #fff;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
@@ -1141,15 +1148,20 @@ body{
 	position: relative;
 }
 .registration-wrapper__form-item--warning{
-	border: 1px solid red;
+	
 }
-.egistration-wrapper__form-item.registration-wrapper__form-item--warning .registration-wrapper__form-item-text{
+.registration-wrapper__item-wrapper span{
+	top: -45px;
+	color: red;
+	position: absolute;
+	display: none;
+	left: 0;
+}
+.registration-wrapper__item-wrapper.registration-wrapper__item-wrapper--warning span{
 	display: block;
 }
-.registration-wrapper__form-item::after{
-	content: "выфвыфв";
-	position: absolute;
-	top: 0;
+.registration-wrapper__item-wrapper.registration-wrapper__item-wrapper--warning input{
+	border: 1px solid red;
 }
 .registration-wrapper__form-button{
 	width: 420px;
@@ -1226,7 +1238,10 @@ body{
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	text-align: center;
-  	margin-bottom: 40px;
+  	margin-bottom: 60px;
+}
+.recovery-wrapper__item-wrapper{
+	width: 100%;
 }
 .recovery-wrapper__form-email{
 	width: 100%;
@@ -1338,7 +1353,7 @@ body{
 	background: linear-gradient(rgb(255,188,0) 0%, rgb(255,122,0) 100%);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	margin-bottom: 20px;
+  	margin-bottom: 40px;
 }
 .entrance-wrapper__form{
 	
@@ -1350,7 +1365,14 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
+}
+.registration-wrapper__item-wrapper--entrance{
+	width: 100%;
+}
+.registration-wrapper__item-wrapper--entrance span{
+	top: -25px;
+	left: 203px;
 }
 .entrance-wrapper__form-checkbox{
 	margin-bottom: 10px;
@@ -1536,7 +1558,7 @@ body{
 	.content-news__info{
 		max-width: 435px;
 	}
-	.characters-content{
+	.characters-content__wrapper{
 		justify-content: center;
 		flex-wrap: wrap;
 	}
@@ -1609,6 +1631,13 @@ body{
 	}
 	.entrance-wrapper__form-button{
 		width: 100%;
+	}
+	.registration-wrapper__item-wrapper--entrance span{
+		top: 35px;
+		left: 0;
+	}
+	.registration-wrapper__item-wrapper.registration-wrapper__item-wrapper--warning p{
+		margin-bottom: 70px;
 	}
 }
 @media (max-width: 770px){
@@ -1838,6 +1867,9 @@ body{
 		line-height: 34px;
 		font-size: 29px;
 	}
+	.characters-profile__block-title{
+		font-size: 18px;
+	}
 	.donations-wrapper__form-text{
 		font-size: 14px;
 	}
@@ -1853,11 +1885,11 @@ body{
 	.registration-wrapper{
 		margin: -130px -15px 0;
 	}
-	.registration-wrapper__form-item{
-		margin-bottom: 20px;
+	.registration-wrapper__item-wrapper{
+		margin-bottom: 45px;
 		width: 100%;
 	}
-	.registration-wrapper__form-item:last-child{
+	.registration-wrapper__item-wrapper:last-child{
 		margin-bottom: 0;
 	}
 	.registration-wrapper__form-button{
@@ -1953,7 +1985,8 @@ body{
 		margin-bottom: 5px;
 	}
 	.characters-profile__bottom{
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 	.characters-profile__bottom-block{
 		max-width: 210px;
@@ -1987,6 +2020,9 @@ body{
 	.section-title{
     	line-height: 27px;
     	font-size: 21px;
+	}
+	.characters-profile__block-title{
+		font-size: 18px;
 	}
 	.recovery-wrapper__text-content{
 		margin-bottom: 10px;

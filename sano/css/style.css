@@ -2753,6 +2753,9 @@ width:15px;
 	.header-top__content-left{
 		margin-left: auto;
 	}
+	.header-body{
+		margin-top: 120px;
+	}
 	.header-top__content-logo{
 		top: -6px;
 		left: 0;

@@ -1579,6 +1579,9 @@ body{
 	.header-bottom__mobile-top{
 		padding-top: 15px;
 	}
+	.header-bottom__wrapper-list{
+		margin-bottom: 15px;
+	}
 
 }
 

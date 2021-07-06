@@ -1574,6 +1574,9 @@ body{
 	.footer-item__decisions-body{
 		flex-wrap: wrap;
 	}
+	.header-bottom__mobile-menu{
+		padding-top: 15px;
+	}
 
 }
 

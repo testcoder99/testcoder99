@@ -1454,10 +1454,11 @@ body{
 	}
 	.header-bottom__list-item:last-child{
 		margin-right: 0;
+		margin-bottom: 0;
 	}
 	.suitable-wrapper__item-title {
-    	font-size: 18px;
-    	line-height: 24px;
+    		font-size: 18px;
+    		line-height: 24px;
 	}
 	.decisions-wrapper__item{
 		width: 100%;
